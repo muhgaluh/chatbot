@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot MakanBuddy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #5cb9ef5b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 0.4;
+            }
+        }
+
+        h1 {
+            color: #2E3871;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            color: #2E3871;
+            margin-bottom: 7px;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature i {
+            color: #2E3871;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            color: #00796b;
+            margin: 10px 0;
+        }
+
+        .start-button {
+            background: linear-gradient(150deg, #5cb9ef, #2E3871);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .start-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-container">
+        <h1>Chatbot MakanBuddy</h1>
+        <p class="description">
+            Chatbot AI Rekomendasi Tempat Makan Yang Dirancang Untuk Membantu Anda Dalam Mencari Lokasi Tempat Makan Melalui Obrolan Interaktif. 
+        </p>
+
+        <div class="features">
+            <h3>Kemampuan</h3>
+            <h3>Batasan</h3>
+            <div class="feature">
+                <p>Mampu Berinteraksi Dengan Pengguna Secara Real Time</p>
+            </div>
+            <div class="feature">
+                <p>Memberikan Informasi Tempat Makan Terkini</p>
+            </div>
+            <div class="feature">
+                <p>Mampu Memberikan Rekomendasi Tempat Makan</p>
+            </div>
+            <div class="feature">
+                <p>Terkadang Informasi Kurang Akurat</p>
+            </div>
+        </div>
+
+        <a href="/chat" class="start-button">
+            <i class="fas fa-comments"></i>
+            Mulai Interaksi
+        </a>
+    </div>
+
+</body>
+</html>
