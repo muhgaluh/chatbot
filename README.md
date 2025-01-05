@@ -11,10 +11,9 @@ Selamat Datang di Proyek Chatbot MakanBuddy!
 * Clone atau download proyek ini ke local machine.
 
 * Buka terminal atau command prompt dan arahkan proyek ke direktori menggunakan `cd`:
-
-   ```shell
-   cd path/to/chatbot-project
-
+```
+cd path/to/chatbot-project
+```
 * Buat virtual environment :
 
 ```
@@ -32,10 +31,10 @@ venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
-* Cek apakah library dan dependencies sudah memenuhi syarat untuk dijalankan pada algoritma chatbot
+* Cek apakah library dan dependencies sudah memenuhi syarat untuk dijalankan pada logika chatbot
 
 ```
-python chat.py
+python chatbot.py
 ```
 
 * Run
